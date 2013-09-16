@@ -26,7 +26,7 @@ public class CaptureEngineImpl
 		
 		int index = 0;
 		for (PcapIf device : alldevs)
-			devs.add(new DevInfo(index, device.getName(), device.getDescription()));
+			devs.add(new DevInfo(index++, device.getName(), device.getDescription()));
 		return devs;
 	}
 	
